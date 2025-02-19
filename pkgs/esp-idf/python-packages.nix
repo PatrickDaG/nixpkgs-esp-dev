@@ -64,12 +64,12 @@ rec {
 
   esp-coredump = buildPythonPackage rec {
     pname = "esp-coredump";
-    version = "1.12.0";
+    version = "1.10.0";
     pyproject = true;
 
     src = fetchPypi {
       inherit pname version;
-      sha256 = "sha256-s/JKD9PwcU7OZ3x4U4ScCRILvc1Ors0hkXHiRV+R+tg=";
+      sha256 = "sha256-nZZlKUuVSQlegRABy70a/hgEaoQVspCBrXK9bpW/zPY=";
     };
 
     build-system = [
@@ -130,7 +130,7 @@ rec {
 
   esp-idf-kconfig = buildPythonPackage rec {
     pname = "esp-idf-kconfig";
-    version = "2.3.0";
+    version = "1.5.0";
     pyproject = true;
 
     build-system = [
@@ -138,9 +138,8 @@ rec {
     ];
 
     src = fetchPypi {
-      inherit version;
-      pname = "esp_idf_kconfig";
-      sha256 = "sha256-n+8QM5xe+c8UFl8dTndRTBd4QW7nG1NWiYiEdll06wg=";
+      inherit pname version;
+      sha256 = "sha256-vB1mgRkFOXWU2Xp9s47kEbgbdh6K+uYtV+LQG1Cf6qE=";
     };
 
     doCheck = false;

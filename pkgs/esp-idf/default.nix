@@ -1,5 +1,5 @@
-{ rev ? "v5.4"
-, sha256 ? "sha256-9OQ/0DGwgfR3MkRWd6zSe1FD3Ywt4Ugw8J/BFu1Vfw0="
+{ rev ? "v5.2.3"
+, sha256 ? "sha256-dGwkN+a2wYX5f/epDo+HPIhCGPziLQpTy0zfHiVUMls="
 , toolsToInclude ? [
     "xtensa-esp-elf-gdb"
     "riscv32-esp-elf-gdb"
